@@ -16,14 +16,13 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
-	private String[] navItems = {"Brown", "Cadet Blue", "Dark Olive Green", "Dark Orange", "Golden Rod"};
+	private String[] navItems = {"Brown", "Cadet Blue", "Dark Olive Green", 
+									"Dark Orange", "Golden Rod"};
 	private DrawerLayout dlDrawer;
 	private ActionBarDrawerToggle dtToggle;
 	private ListView lvNavList;
 	private FrameLayout flContainer;
 
-	
-	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,7 +32,8 @@ public class MainActivity extends Activity {
 		lvNavList = (ListView)findViewById(R.id.lv_activity_main_nav_list);
 		flContainer = (FrameLayout)findViewById(R.id.fl_activity_main_container);
 		
-		lvNavList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, navItems));
+		lvNavList.setAdapter(
+				new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, navItems));
 		lvNavList.setOnItemClickListener(new DrawerItemClickListener());
 		
 		dtToggle = new ActionBarDrawerToggle(this, dlDrawer, 
@@ -41,37 +41,23 @@ public class MainActivity extends Activity {
 
 					@Override
 					public void onDrawerClosed(View drawerView) {
-						// TODO Auto-generated method stub
 						super.onDrawerClosed(drawerView);
 					}
 
 					@Override
 					public void onDrawerOpened(View drawerView) {
-						// TODO Auto-generated method stub
 						super.onDrawerOpened(drawerView);
 					}
 			
 		};
-		
+		dlDrawer.setDrawerListener(dtToggle);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		
-		
 	}
 	
 	protected void onPostCreate(Bundle savedInstanceState){
 		super.onPostCreate(savedInstanceState);
 		dtToggle.syncState();
 	}
-	
-	
-	@Override
-	public boolean onPrepareOptionsMenu(Menu menu) {
-		boolean drawerOpen = dlDrawer.isDrawerOpen(lvNavList);
-		
-		return super.onPrepareOptionsMenu(menu);
-	}
-
-
 
 	private class DrawerItemClickListener implements ListView.OnItemClickListener{
 
