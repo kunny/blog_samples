@@ -1,0 +1,23 @@
+# build application files
+*.apk
+*.ap_
+
+# files for the dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# Mac .DS_Store
+.DS_Store
