@@ -1,7 +1,7 @@
 package com.androidhuman.example.NavigationDrawer;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -18,17 +18,17 @@ public class MainActivity extends Activity {
 
 	private String[] navItems = {"Brown", "Cadet Blue", "Dark Olive Green", 
 									"Dark Orange", "Golden Rod"};
-	private DrawerLayout dlDrawer;
-	private ActionBarDrawerToggle dtToggle;
 	private ListView lvNavList;
 	private FrameLayout flContainer;
+	
+	private DrawerLayout dlDrawer;
+	private ActionBarDrawerToggle dtToggle;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		dlDrawer = (DrawerLayout)findViewById(R.id.dl_activity_main_drawer);
 		lvNavList = (ListView)findViewById(R.id.lv_activity_main_nav_list);
 		flContainer = (FrameLayout)findViewById(R.id.fl_activity_main_container);
 		
@@ -36,6 +36,7 @@ public class MainActivity extends Activity {
 				new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, navItems));
 		lvNavList.setOnItemClickListener(new DrawerItemClickListener());
 		
+		dlDrawer = (DrawerLayout)findViewById(R.id.dl_activity_main_drawer);
 		dtToggle = new ActionBarDrawerToggle(this, dlDrawer, 
 				R.drawable.ic_drawer, R.string.open_drawer, R.string.close_drawer){
 
@@ -58,6 +59,21 @@ public class MainActivity extends Activity {
 		super.onPostCreate(savedInstanceState);
 		dtToggle.syncState();
 	}
+	
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		dtToggle.onConfigurationChanged(newConfig);
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if(dtToggle.onOptionsItemSelected(item)){
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
 
 	private class DrawerItemClickListener implements ListView.OnItemClickListener{
 
@@ -93,12 +109,6 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		if(dtToggle.onOptionsItemSelected(item)){
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
+
 
 }
