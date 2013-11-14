@@ -61,18 +61,21 @@ public class MainActivity extends Activity {
 	}
 	
 	@Override
-	public void onConfigurationChanged(Configuration newConfig) {
-		super.onConfigurationChanged(newConfig);
-		dtToggle.onConfigurationChanged(newConfig);
-	}
-	
-	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if(dtToggle.onOptionsItemSelected(item)){
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		dtToggle.onConfigurationChanged(newConfig);
+	}
+
 
 
 	private class DrawerItemClickListener implements ListView.OnItemClickListener{
