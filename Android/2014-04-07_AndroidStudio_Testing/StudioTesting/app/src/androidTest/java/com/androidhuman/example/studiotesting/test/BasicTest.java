@@ -1,5 +1,7 @@
 package com.androidhuman.example.studiotesting.test;
 
+import com.androidhuman.example.studiotesting.Adder;
+
 import junit.framework.TestCase;
 
 /**
@@ -8,10 +10,7 @@ import junit.framework.TestCase;
 public class BasicTest extends TestCase{
 
     public void testSimple(){
-        int a = 1;
-        int b = 3;
-        int result = a+b;
-
-        assertEquals(4, result);
+        Adder adder = new Adder();
+        assertEquals(5, adder.add(2, 3));
     }
 }
