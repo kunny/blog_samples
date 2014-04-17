@@ -33,4 +33,5 @@ before_install:
 
 script:
   # Android gradle build with travis CI
-  - Android/2014-04-18_Travis_Android_Gradle/TravisAndroid/gradlew build
+  - cd Android/2014-04-18_Travis_Android_Gradle/TravisAndroid
+  - ./gradlew build
