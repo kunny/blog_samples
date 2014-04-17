@@ -1,4 +1,4 @@
-blog_samples
+Blog samples
 ============
 
-Sample projects provided on blog article
+'커니의 안드로이드 이야기(http://androidhuman.com)'에 게재되는 포스트에서 사용하는 예제를 제공합니다.
