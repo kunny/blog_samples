@@ -1,9 +1,7 @@
 env:
-  # For Gradle build output
-  - TERM=dumb
-
-  # Android SDK version
-  - ANDROID_SDK_VERSION=22.6.2
+  # TERM=dumb : For Gradle build output
+  # ANDROID_SDK_VERSION : as-is
+  - TERM=dumb  ANDROID_SDK_VERSION=22.6.2
 
 before_install:
   # Install base Android SDK
