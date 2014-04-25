@@ -36,5 +36,5 @@ before_install:
 
 script:
   # Build all gradle-based Android projects
-  cd Android
-  ./build.sh
+  - cd Android
+  - ./build.sh
