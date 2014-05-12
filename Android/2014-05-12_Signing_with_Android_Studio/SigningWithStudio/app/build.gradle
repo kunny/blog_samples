@@ -26,12 +26,12 @@ android {
             keyPassword key_pass
         }
 
-        releaseWithEnv {
+        /*releaseWithEnv {
             storeFile file(System.getenv("KEYSTORE"))
             storePassword System.getenv("KEYSTORE_PASS")
             keyAlias System.getenv("KEY_ALIAS")
             keyPassword System.getenv("KEY_PASS")
-        }
+        }*/
 
     }
 
