@@ -15,6 +15,7 @@ projects=(
 	2014-05-12_Signing_with_Android_Studio/SigningWithStudio
 	2014-06-01_NavigationDrawer_Fragments/BasicFragments
 	2014-06-01_NavigationDrawer_Fragments/BasicFragments_withActionItem
+	2014-06-01_NavigationDrawer_Fragments/BasicFragments_PersistState
 )
 
 function build_subprojects(){
