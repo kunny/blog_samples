@@ -11,7 +11,6 @@ projects=(
 	2013-07-21_Navigation_Drawer_Example/NavigationDrawerExample_Studio
 	2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp
 	2014-04-07_AndroidStudio_Testing/StudioTesting
-	2014-04-18_Travis_Android_Gradle/TravisAndroid
 	2014-05-12_Signing_with_Android_Studio/SigningWithStudio
 	2014-06-01_NavigationDrawer_Fragments/BasicFragments
 	2014-06-01_NavigationDrawer_Fragments/BasicFragments_withActionItem
