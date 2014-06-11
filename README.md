@@ -15,7 +15,7 @@
 
 [파이썬 스크립트](https://raw.githubusercontent.com/kunny/blog_samples/master/Android/get_project.py)를 사용하면 일부 프로젝트만 선택하여 다운로드 할 수 있습니다. 스크립트 사용을 위해 미리 설치되어 있어야 하는 구성요소는 다음과 같습니다.
 
-- Python 2.4 이상
+- Python 2.7.5 이상
 - Subversion
 
 #### 다운로드 가능한 프로젝트 조회
