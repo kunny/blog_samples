@@ -48,7 +48,8 @@
 
     $ python get_project.py HelloWorld
 
-여러 프로젝트를 동시에 다운로드 하는 경우에도 인자로 프로젝트 이름들을 넘겨주면 됩니다.
+여러 프로젝트를 동시에 다운로드 하려는 경우, 인자에 프로젝트 이름들을 연달아 입력하면 됩니다.  
+아래는 `HelloWorld` 예제와 `BasicFragments` 예제를 다운로드 하는 예를 보여줍니다.
 
     $ python get_project.py HelloWorld BasicFragments
 
