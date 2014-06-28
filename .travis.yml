@@ -5,6 +5,8 @@ android:
     - build-tools-19.0.3
     - build-tools-19.0.0
 
+  licenses:
+    - android-sdk-license-5be876d5
 env:
   # TERM=dumb : For Gradle build output
   - TERM=dumb
