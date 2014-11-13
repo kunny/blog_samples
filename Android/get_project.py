@@ -53,7 +53,10 @@ projects = [
 		'http://androidhuman.com/547'),
 	Project('BasicFragments_PersistState',
 		'2014-06-01_NavigationDrawer_Fragments/BasicFragments_PersistState',
-		'http://androidhuman.com/549')
+		'http://androidhuman.com/549'),
+	Project('SupportMaterial',
+		'2014-11-13_Support_Material',
+		'http://androidhuman.tistory.com/558')
 ]
 
 def printProjects():

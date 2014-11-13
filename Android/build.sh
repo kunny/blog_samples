@@ -15,6 +15,7 @@ projects=(
 	2014-06-01_NavigationDrawer_Fragments/BasicFragments
 	2014-06-01_NavigationDrawer_Fragments/BasicFragments_withActionItem
 	2014-06-01_NavigationDrawer_Fragments/BasicFragments_PersistState
+	2014-11-13_Support_Material
 )
 
 function build_subprojects(){
