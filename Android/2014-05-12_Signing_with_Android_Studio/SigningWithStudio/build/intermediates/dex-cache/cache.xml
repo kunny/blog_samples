@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/kunny/android-sdk-osx/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/kunny/git/blog_samples/Android/2014-05-12_Signing_with_Android_Studio/SigningWithStudio/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-131be3ef956afa156012106bab7de000e7a5cfd0.jar" />
+    </item>
+    <item
+        jar="/Users/kunny/git/blog_samples/Android/2014-05-12_Signing_with_Android_Studio/SigningWithStudio/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/Users/kunny/git/blog_samples/Android/2014-05-12_Signing_with_Android_Studio/SigningWithStudio/app/build/intermediates/pre-dexed/debug/classes-af98fe29599a6ea4e5d55cb54fa9f8809395c430.jar" />
+    </item>
+
+</items>

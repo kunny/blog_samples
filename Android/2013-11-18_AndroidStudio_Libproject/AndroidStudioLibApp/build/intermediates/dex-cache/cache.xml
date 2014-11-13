@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/pre-dexed/defaultFlavor/debug/classes-09ede6cc565c0b6607739720ee985138205abdf7.jar" />
+    </item>
+    <item
+        jar="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/exploded-aar/AndroidStudioLibApp/StudioLib/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0e79489f25ec1668e6427dba8dc74926547ece32">
+        <dex dex="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/pre-dexed/defaultFlavor/debug/classes-97bb82f903bc9a57c79c666308b915c7d98c64be.jar" />
+    </item>
+    <item
+        jar="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/pre-dexed/defaultFlavor/debug/classes-ca775eb1431939af962e82674f77db1b16f28358.jar" />
+    </item>
+    <item
+        jar="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/pre-dexed/defaultFlavor/debug/internal_impl-20.0.0-d839d95826a0630be8ea7d0e54cff445e5fadc52.jar" />
+    </item>
+    <item
+        jar="/Users/kunny/android-sdk-osx/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/Users/kunny/git/blog_samples/Android/2013-11-18_AndroidStudio_Libproject/AndroidStudioLibApp/StudioApp/build/intermediates/pre-dexed/defaultFlavor/debug/support-annotations-20.0.0-8227cd1365dfacca3fadfc809cce4e479abddf7c.jar" />
+    </item>
+
+</items>
