@@ -56,7 +56,7 @@ projects = [
 		'http://androidhuman.com/549'),
 	Project('SupportMaterial',
 		'2014-11-13_Support_Material',
-		'http://androidhuman.tistory.com/558')
+		'http://androidhuman.com/558')
 ]
 
 def printProjects():
