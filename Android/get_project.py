@@ -62,7 +62,10 @@ projects = [
 		'http://androidhuman.com/559'),
 	Project('Material_Navigation_Drawer_FullOverlay',
 		'2014-11-17_Material_Navigation_Drawer_FullOverlay',
-		'http://androidhuman.com/560')
+		'http://androidhuman.com/560'),
+	Project('MaterialColor',
+		'2014-11-18_MaterialColor',
+		'http://androidhuman.com/561')
 ]
 
 def printProjects():
