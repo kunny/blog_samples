@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.OverlayActionBar" parent="AppTheme">
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+</resources>

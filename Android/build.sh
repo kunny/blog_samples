@@ -19,6 +19,7 @@ projects=(
 	2014-11-16_Material_Navigation_Drawer
 	2014-11-17_Material_Navigation_Drawer_FullOverlay
 	2014-11-18_MaterialColor
+	2015-01-24_Material_Design_for_everyone
 )
 
 function build_subprojects(){
