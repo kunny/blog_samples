@@ -1,5 +1,6 @@
 package com.androidhuman.example.materialdesign;
 
+import android.annotation.TargetApi;
 import android.os.Build;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -18,6 +19,7 @@ public class LowProfileActivity extends ActionBarActivity {
 
         findViewById(R.id.toggle).setOnClickListener(new View.OnClickListener() {
             @Override
+            @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
             public void onClick(View v) {
                 ActionBar ab = getSupportActionBar();
                 View decorView = getWindow().getDecorView();
