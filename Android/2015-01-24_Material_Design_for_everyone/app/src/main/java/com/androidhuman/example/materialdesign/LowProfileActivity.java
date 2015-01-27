@@ -25,6 +25,7 @@ public class LowProfileActivity extends ActionBarActivity {
     ArgbEvaluator argbEvaluator;
 
     @Override
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_low_profile);
