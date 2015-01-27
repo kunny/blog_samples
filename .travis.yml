@@ -9,6 +9,7 @@ android:
     - build-tools-19.1.0
     - build-tools-19.0.3
     - build-tools-19.0.0
+    - extra-android-m2repository
 
   licenses:
     - android-sdk-license-5be876d5
