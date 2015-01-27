@@ -3,9 +3,9 @@ package com.androidhuman.example.materialdesign;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,8 +28,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         dlDrawer = (DrawerLayout) findViewById(R.id.drawer);
-        dtToggle = new ActionBarDrawerToggle(this, dlDrawer,
-                R.mipmap.ic_drawer, R.string.app_name, R.string.app_name);
+        dtToggle = new ActionBarDrawerToggle(this, dlDrawer, R.string.app_name, R.string.app_name);
         dlDrawer.setDrawerListener(dtToggle);
 
         lvMenuList = (ListView) findViewById(R.id.menu);
