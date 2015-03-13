@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="selectableItemBackgroundCompat">?android:attr/selectableItemBackground</item>
+    </style>
+
+</resources>
