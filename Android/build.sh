@@ -21,6 +21,7 @@ projects=(
 	2014-11-18_MaterialColor
 	2015-01-24_Material_Design_for_everyone
 	2015-03-12_SelectableItem_background_compat
+	2015-07-12_Support_Design_Sample
 )
 
 function build_subprojects(){

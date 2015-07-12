@@ -71,7 +71,10 @@ projects = [
 		'None'),
 	Project('SelectableItemBackground',
 		'2015-03-12_SelectableItem_background_compat',
-		'http://androidhuman.com/562')
+		'http://androidhuman.com/562'),
+	Project('SupportDesignSample',
+		'2015-07-12_Support_Design_Sample',
+		'None')
 ]
 
 def printProjects():
