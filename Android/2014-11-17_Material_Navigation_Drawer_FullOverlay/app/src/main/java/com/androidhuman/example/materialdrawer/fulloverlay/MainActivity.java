@@ -2,7 +2,6 @@ package com.androidhuman.example.materialdrawer.fulloverlay;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     DrawerLayout dlDrawer;
-    NavigationView nvNavigation;
     ActionBarDrawerToggle dtToggle;
 
     @Override
@@ -25,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //toolbar.setNavigationIcon(R.drawable.ic_menu);
 
         dlDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
