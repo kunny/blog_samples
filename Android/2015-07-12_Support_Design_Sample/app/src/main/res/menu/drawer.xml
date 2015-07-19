@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_dashboard"
-            android:icon="@drawable/ic_dashboard_black_24dp"
-            android:title="Dashboard" />
-        <item
-            android:id="@+id/nav_explore"
-            android:icon="@drawable/ic_explore_black_24dp"
-            android:title="Explore" />
-    </group>
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/nav_explore"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:title="Explore" />
+</group>
 
-    <item android:title="Sub menu">
-        <menu>
-            <item
-                android:icon="@drawable/ic_event_black_24dp"
-                android:title="Event" />
-            <item
-                android:icon="@drawable/ic_home_black_24dp"
-                android:title="Home" />
-        </menu>
-    </item>
+<item android:title="Sub menu">
+    <menu>
+        <item
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Event" />
+        <item
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+    </menu>
+</item>
 </menu>
