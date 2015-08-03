@@ -22,6 +22,7 @@ projects=(
 	2015-01-24_Material_Design_for_everyone
 	2015-03-12_SelectableItem_background_compat
 	2015-07-12_Support_Design_Sample
+	2015-08-04_Coordinator_Layout
 )
 
 function build_subprojects(){

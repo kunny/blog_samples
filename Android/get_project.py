@@ -74,6 +74,9 @@ projects = [
 		'http://androidhuman.com/562'),
 	Project('SupportDesignSample',
 		'2015-07-12_Support_Design_Sample',
+		'None'),
+	Project('CoordinatorLayout',
+		'2015-08-04_Coordinator_Layout',
 		'None')
 ]
 
