@@ -23,6 +23,14 @@ projects=(
 	2015-03-12_SelectableItem_background_compat
 	2015-07-12_Support_Design_Sample
 	2015-08-04_Coordinator_Layout
+	2016-01-18_Support_SelectableItemBackgroud
+	2016-02-13_JacocoUnitTest
+	2016-02-28_bottom_sheets
+	2016-03-08_Hello_Kotlin
+	2016-03-16_bottom_navigation_behavior
+	2016-03-26_Google_Maps_V2_2016
+	2016-07-24_Kotlin_Android_Extensions
+	#2016-09-06_ktlint_on_android
 )
 
 function build_subprojects(){
