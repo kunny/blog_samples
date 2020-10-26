@@ -15,9 +15,9 @@ public class MyApplication extends Application {
 
         MobileAds.initialize(this);
 
-        appOpenAdManager = new AppOpenAdManager(this,
-                AppOpenAdManager.TEST_AD_UNIT_ID,
-                AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT);
+        appOpenAdManager = new AppOpenAdManager
+                .Builder(this, AppOpenAdManager.TEST_AD_UNIT_ID)
+                .build();
     }
 
     public AppOpenAdManager getAppOpenAdManager() {

@@ -30,16 +30,55 @@ public class AppOpenAdManager extends AppOpenAd.AppOpenAdLoadCallback
     }
 
     @Retention(RetentionPolicy.SOURCE)
-    @IntRange(from = 0L)
+    @IntRange(from = 0L, to = MAX_AD_EXPIRY_DURATION)
     public @interface AdExpiryDuration {
 
     }
 
+    public static class Builder {
+
+        private final Application application;
+
+        private final String adUnitId;
+
+        @AdOrientation
+        private int orientation = AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT;
+
+        @AdExpiryDuration
+        private long adExpiryDuration = MAX_AD_EXPIRY_DURATION;
+
+        private AdRequest adRequest = new AdRequest.Builder().build();
+
+        public Builder(@NonNull Application application, @NonNull String adUnitId) {
+            this.application = application;
+            this.adUnitId = adUnitId;
+        }
+
+        public Builder setOrientation(@AdOrientation int orientation) {
+            this.orientation = orientation;
+            return this;
+        }
+
+        public Builder setAdExpiryDuration(@AdExpiryDuration long duration) {
+            this.adExpiryDuration = duration;
+            return this;
+        }
+
+        public Builder setAdRequest(@NonNull AdRequest request) {
+            this.adRequest = request;
+            return this;
+        }
+
+        public AppOpenAdManager build() {
+            return new AppOpenAdManager(this);
+        }
+    }
+
     public static final String TEST_AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712";
 
-    private static final String TAG = "AppOpenManager";
-
     public static final long MAX_AD_EXPIRY_DURATION = 3600000 * 4;
+
+    private static final String TAG = "AppOpenManager";
 
     private final Application application;
 
@@ -59,31 +98,12 @@ public class AppOpenAdManager extends AppOpenAd.AppOpenAdLoadCallback
 
     private long lastAdFetchTime = 0L;
 
-    public AppOpenAdManager(@NonNull Application application,
-            @NonNull String adUnitId, @AdOrientation int orientation) {
-        this(application, adUnitId, orientation, MAX_AD_EXPIRY_DURATION);
-    }
-
-    public AppOpenAdManager(@NonNull Application application, @NonNull String adUnitId,
-            @AdOrientation int orientation, @AdExpiryDuration long expiryDuration) {
-        this(application, adUnitId, orientation, expiryDuration, null);
-    }
-
-    public AppOpenAdManager(@NonNull Application application, @NonNull String adUnitId,
-            @AdOrientation int orientation, @NonNull AdRequest request) {
-        this(application, adUnitId, orientation, MAX_AD_EXPIRY_DURATION, request);
-    }
-
-    public AppOpenAdManager(
-            @NonNull Application application, @NonNull String adUnitId,
-            @AdOrientation int orientation, @AdExpiryDuration long expiryDuration,
-            @Nullable AdRequest request) {
-        this.application = application;
-        this.adUnitId = adUnitId;
-        this.orientation = orientation;
-        this.adExpiryDuration = expiryDuration > 0L && expiryDuration <= MAX_AD_EXPIRY_DURATION
-                ? expiryDuration : MAX_AD_EXPIRY_DURATION;
-        this.adRequest = request != null ? request : getDefaultRequest();
+    private AppOpenAdManager(Builder builder) {
+        this.application = builder.application;
+        this.adUnitId = builder.adUnitId;
+        this.orientation = builder.orientation;
+        this.adExpiryDuration = builder.adExpiryDuration;
+        this.adRequest = builder.adRequest;
 
         // Used to keep track of most recent activity.
         this.application.registerActivityLifecycleCallbacks(this);
@@ -149,10 +169,6 @@ public class AppOpenAdManager extends AppOpenAd.AppOpenAdLoadCallback
 
     private boolean isAdExpired() {
         return System.currentTimeMillis() - lastAdFetchTime > adExpiryDuration;
-    }
-
-    private AdRequest getDefaultRequest() {
-        return new AdRequest.Builder().build();
     }
 
     // AppOpenAd.AppOpenAdLoadCallback implementations
