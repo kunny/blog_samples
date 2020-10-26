@@ -1,0 +1,16 @@
+ext {
+    // Android Gradle plugin
+    androidPluginVersion = '4.0.2'
+
+    // Build configurations
+    minSdkVersion = 21
+    compileSdkVersion = 30
+    targetSdkVersion = 30
+    buildToolsVersion = '30.0.2'
+
+    // Libraries
+    appCompatVersion = '1.2.0'
+    constraintLayoutVersion = '2.0.2'
+    googleMobileAdsVersion = '19.5.0'
+    lifecycleVersion = '2.2.0'
+}
